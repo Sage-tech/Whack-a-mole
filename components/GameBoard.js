@@ -20,7 +20,7 @@ return (
   <ImageBackground style={styles.container}
     source={require('../assets/background.png')}>
     <Text style={styles.header}>Sierra's Whack-a-mole App!</Text>
-    <Text> You have {timeLeft} seconds left</Text>
+    <Text>You have {timeLeft} seconds left</Text>
       <Text>{props.score} Moles whacked!</Text>
       <View style={styles.game}>
       <Square></Square>
@@ -60,11 +60,11 @@ const styles = StyleSheet.create({
     }
   });
 
-const mapStateTopProps = state => {
+const mapStateToProps = state => {
 return {
 score: state.score
 }
 }
 
 
-export default connect(mapStateTopProps)(GameBoard)
+export default connect(mapStateToProps)(GameBoard)

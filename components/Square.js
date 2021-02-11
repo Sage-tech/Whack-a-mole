@@ -1,5 +1,5 @@
 import React, {useState, useEffect } from 'react'
-import { View, StyleSheet, Text, TouchableOpacity } from 'react-native'
+import { StyleSheet, Text, TouchableOpacity, Image } from 'react-native'
 import { addScore } from './../redux'
 import { connect } from 'react-redux'
 
@@ -26,11 +26,13 @@ const Square = (props) => {
 // when mole is active invoke the add score function 
     return (
     <TouchableOpacity onPress={moleActive? props.addScore : null}>  
-   <View style={moleActive? styles.mole : styles.square}>  
-{isGameOver && <Text>X</Text>}
-           
-   </View> // if mole is active set the style as mole if not active set styles to square 
-// display X over when game is finished 
+    <Image
+    source={moleActive? require('../assets/mole.png'): require('../assets/hole.png')}
+   style={moleActive? styles.mole : styles.square}>  
+    </Image>
+{/*            
+   // if mole is active set the style as mole if not active set styles to square  */}
+
 </TouchableOpacity>
     )
 
@@ -42,14 +44,16 @@ square: {
  minWidth: 80,
  minHeight: 80,
 margin: 10,
-backgroundColor:'red',
+backgroundColor:'#9BF89C',
+width: '100%'
 },
 mole: {
     flex: 1,
     minWidth: 80,
     minHeight: 80,
-   margin: 10,
-   backgroundColor:'blue',
+    margin: 10,
+    backgroundColor: '#9BF89C', 
+    width: '100%'
 },
 x: {
     fontWeight: 'bold',
