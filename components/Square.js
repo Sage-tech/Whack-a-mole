@@ -11,7 +11,7 @@ const Square = (props) => {
     let timerId
 
       useEffect(() => {     // after x amount of time has passed set MoleActive to true
-                             // after another x amount of time have passed set MoleActive to true
+                             // after another x amount of time has passed set MoleActive to false
         const timerId = setInterval (() => {
            setMoleActive(true)
            setTimeout(() => {setMoleActive(false)},800)

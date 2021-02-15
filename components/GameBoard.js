@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 
 
 const GameBoard = (props) => {
-const [timeLeft, setTimeLeft] = useState(60) // Starting at 10 
+const [timeLeft, setTimeLeft] = useState(60) // Starting at 60
 
 useEffect(() => {
 if (!timeLeft) return
