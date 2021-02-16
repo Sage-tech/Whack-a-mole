@@ -1,6 +1,6 @@
 # Whack-a-mole
-game React-native
-Whack-a-mole in react native
+React-native
+A Whack-a-mole game in react native
 
 Using a mobile phone to run the app (iOS and Android)
 set up an iOS simulator on the computer to run the app
