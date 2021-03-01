@@ -11,3 +11,4 @@ Expo: http://bit.ly/expo-link
 Node: https://nodejs.org/en/
 Homebrew: https://brew.sh/
 XCode: https://apps.apple.com/gb/app/xcode/
+to help create this project 
